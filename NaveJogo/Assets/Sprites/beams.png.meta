@@ -1,0 +1,1288 @@
+fileFormatVersion: 2
+guid: 0fc57b5a89aaa2e469e1b3a00da31bdb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: beams_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 426
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a834565701a25c34fb97ad42853ed9f7
+      internalID: -204221047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 425
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cece8efe459a5354daa179668166a0b0
+      internalID: -1870325383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_2
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 442
+        width: 23
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f99e536400d96479776a4912f8f253
+      internalID: 1707181279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_3
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 415
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d304cbcffae43c44b7f433f71da4482
+      internalID: 2125071576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_4
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 410
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0f65f6731209004ab2f93b3c47156d7
+      internalID: 305696996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_5
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 421
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df082936007364d4bb00b705d8615521
+      internalID: 1135454507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 414
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14cb265922f1cb941af9c639fdbe7565
+      internalID: 57208517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_7
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 345
+        width: 8
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c16991474a0c194eb9082ac60551046
+      internalID: 625757823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_8
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 357
+        width: 49
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d671f0e2e27ba5f4baf4740848dc9a49
+      internalID: -15723756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_9
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 349
+        width: 7
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed47cd4e3ebc1e144a4a6e3a72210908
+      internalID: 1101812518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 387
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8297c1b41eacd5549b2c6362b277d356
+      internalID: -1880158505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_11
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 397
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9b58bbbdb0d704293bae0fd4b71225
+      internalID: 2064095105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_12
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 382
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2390ce1c7fa626949802d1953be22db3
+      internalID: -1071972445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_13
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 392
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b86c9c028478a64ab9edc9617436370
+      internalID: 241269173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_14
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 386
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7eed3acf6fade044ac876be1c82c8ba
+      internalID: -1427821640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_15
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 396
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b681d84f3bb0eaf4d8ad10d94af9f431
+      internalID: 799862409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_16
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 300
+        width: 71
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178cb225a09a30047a963f088d39e620
+      internalID: -1567652828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_17
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 353
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87286973e8053349a2d3e8ee74bd97f
+      internalID: 2078211729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_18
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 360
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33d83fa1da81f0e419037e2248c2df76
+      internalID: -724665213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_19
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 348
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44dd8373060b03b4ebf84ad712bbe8d4
+      internalID: -215362221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_20
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 355
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1efbcea504e7748b046fc8ab5dd38c
+      internalID: 414078358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_21
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 352
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88a224e1c94da34184dbca9d0e6c50d
+      internalID: -386356209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_22
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 359
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fbc7c3f9ceabd4495dec1983c31714
+      internalID: 1410047749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_23
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 300
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3fdfcc2a783df428c735aaee8f055f
+      internalID: -1400794174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_24
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 311
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba78cd21c70a1944699ef01ac8b0f1b3
+      internalID: 1132504993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_25
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 305
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b96afea0578b1c45be6f7b71112e358
+      internalID: -511442090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_26
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 316
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2221f133f316ab547bafb12a419f5355
+      internalID: 1349518698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_27
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 307
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05159e2f5c569fc4c91e87d712e9e5d4
+      internalID: -347711800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_28
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 318
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9c439f27ad12846a18d5817ea0ef53
+      internalID: -2026674715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_29
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 253
+        width: 56
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3418e9d040a27064fa94466fd0538444
+      internalID: -1767828859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 272
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af06a5b6938cefe4f81161995585dd6c
+      internalID: -657132715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_31
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 282
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 503d264ef3cecf34b8d08bac500ef810
+      internalID: 1289170700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_32
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 277
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bb34cd9e6b7b247b08aeae5907a73e
+      internalID: 2030727285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_33
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 287
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9287c6d73d84c1744abca6c741c75472
+      internalID: 1235884342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_34
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 279
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90176f2067155cd4fbc492369f99c529
+      internalID: 1717043265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_35
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 289
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0cf8367fe3d8048842520a6453a721
+      internalID: -1578193177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 238
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc8317bec32ab7479b3296de36a64d3
+      internalID: 1706897330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_37
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 245
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a985b6cb9f886ff4c94f2c856448d004
+      internalID: -207515823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_38
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 243
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e67e845d8b02124987283f2c3ed83ab
+      internalID: -143333887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_39
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 250
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 484e90ae3323d9f4785f8ad2f8c773ca
+      internalID: 1088124835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_40
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 245
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16609022bd793e54692c884f4a59a369
+      internalID: -640676308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_41
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 252
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be194ea8c91cca44a4428e56f9d3dda
+      internalID: 1552783844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_42
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 235
+        width: 95
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eae8941f3a472c48bea951ef3e4c05e
+      internalID: -1633797931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_43
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 151
+        width: 48
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2357b3d41aaa6549bbb4fe46efc1076
+      internalID: -1034273381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_44
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 146
+        width: 47
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cb6cb2ebe57834fb9f76e5758ef9d3
+      internalID: 387271869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_45
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 226
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf74ffbab08d6fb47a62256e0692a668
+      internalID: 1402993004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 161
+        width: 33
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06aefe766a47d74ea57ec6bfcc224c0
+      internalID: -383296820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_47
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 50
+        width: 99
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea8e7758c8e3c84a9885c43155fd916
+      internalID: -1453922734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_48
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 156
+        width: 41
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0fb7034872ae70438ad7edf2c1523d6
+      internalID: 563792298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_49
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 67
+        width: 39
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb9110be1b87f444bd984aadfb350bb
+      internalID: 445784967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_50
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 40
+        width: 54
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d125fb9acc0544a99d84eed62647a5
+      internalID: 1833403165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_51
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 35
+        width: 62
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f7354b3b4ae4d46aab77c0ec2a8115
+      internalID: 359280297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beams_52
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 0
+        width: 43
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9806a37a2f4c8b4795036f496e658d9
+      internalID: -1050058964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      beams_29: -1767828859
+      beams_24: 1132504993
+      beams_31: 1289170700
+      beams_48: 563792298
+      beams_0: -204221047
+      beams_17: 2078211729
+      beams_45: 1402993004
+      beams_11: 2064095105
+      beams_39: 1088124835
+      beams_34: 1717043265
+      beams_38: -143333887
+      beams_36: 1706897330
+      beams_49: 445784967
+      beams_7: 625757823
+      beams_8: -15723756
+      beams_10: -1880158505
+      beams_42: -1633797931
+      beams_14: -1427821640
+      beams_32: 2030727285
+      beams_16: -1567652828
+      beams_41: 1552783844
+      beams_44: 387271869
+      beams_33: 1235884342
+      beams_15: 799862409
+      beams_9: 1101812518
+      beams_25: -511442090
+      beams_6: 57208517
+      beams_12: -1071972445
+      beams_43: -1034273381
+      beams_40: -640676308
+      beams_46: -383296820
+      beams_5: 1135454507
+      beams_50: 1833403165
+      beams_26: 1349518698
+      beams_52: -1050058964
+      beams_20: 414078358
+      beams_3: 2125071576
+      beams_47: -1453922734
+      beams_21: -386356209
+      beams_2: 1707181279
+      beams_30: -657132715
+      beams_37: -207515823
+      beams_28: -2026674715
+      beams_18: -724665213
+      beams_19: -215362221
+      beams_13: 241269173
+      beams_51: 359280297
+      beams_23: -1400794174
+      beams_35: -1578193177
+      beams_1: -1870325383
+      beams_27: -347711800
+      beams_22: 1410047749
+      beams_4: 305696996
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
