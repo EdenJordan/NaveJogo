@@ -135,7 +135,7 @@ GameObject:
   m_Layer: 0
   m_Name: DisparoAreaInimigoVerde
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -147,7 +147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22601568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.47, y: -0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -318,7 +318,7 @@ GameObject:
   - component: {fileID: 551350265}
   m_Layer: 0
   m_Name: InimigoVerde
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -442,7 +442,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserInimigo: {fileID: 1728159373840224163, guid: 207346c9f90907f4eb0468dec084e95c, type: 3}
   disparoAreaInimigo: {fileID: 22601569}
-  velocidadeInimigo: 8
+  velocidadeInimigo: 0
+  inimigoVidaMaxima: 3
+  inimigoVidaAtual: 0
   tempoMaximoEntreOsLasers: 0.5
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
@@ -459,9 +461,10 @@ GameObject:
   - component: {fileID: 628360211}
   - component: {fileID: 628360210}
   - component: {fileID: 628360212}
+  - component: {fileID: 628360213}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -588,6 +591,21 @@ MonoBehaviour:
   DisparoUnicoArea: {fileID: 381658073}
   velocidadePlayer: 10
   temLaserDuplo: 0
+--- !u!114 &628360213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628360207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b50620a6103b1b44aeb3283a208e01b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerVidaMaxima: 10
+  playerVidaAtual: 0
+  temEscudo: 0
 --- !u!1 &812389078
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +621,7 @@ GameObject:
   - component: {fileID: 812389083}
   m_Layer: 0
   m_Name: InimigoAzul
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -727,7 +745,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserInimigo: {fileID: 6538335017342870576, guid: 438d895306c3df6499891a598b2575d8, type: 3}
   disparoAreaInimigo: {fileID: 1792635175}
-  velocidadeInimigo: 10
+  velocidadeInimigo: 0
+  inimigoVidaMaxima: 5
+  inimigoVidaAtual: 0
   tempoMaximoEntreOsLasers: 1
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
@@ -777,7 +797,7 @@ GameObject:
   - component: {fileID: 2085413131}
   m_Layer: 0
   m_Name: InimigoVerde2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -900,7 +920,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserInimigo: {fileID: 0}
   disparoAreaInimigo: {fileID: 0}
-  velocidadeInimigo: 15
+  velocidadeInimigo: 0
+  inimigoVidaMaxima: 1
+  inimigoVidaAtual: 0
   tempoMaximoEntreOsLasers: 0
   tempoAtualDosLasers: 0
   inimigoAtirador: 0

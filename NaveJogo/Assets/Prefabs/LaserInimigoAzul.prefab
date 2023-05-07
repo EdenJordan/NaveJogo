@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6538335017342870578}
   - component: {fileID: 6538335017342870577}
   - component: {fileID: 6538335017342870579}
+  - component: {fileID: 1865149527}
+  - component: {fileID: 5353768555937196690}
   m_Layer: 0
   m_Name: LaserInimigoAzul
   m_TagString: Untagged
@@ -101,3 +103,30 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.3151105, y: 0.53375864}
   m_Direction: 0
+--- !u!114 &1865149527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6538335017342870576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ca1b1b7d2e082a429025498fc96f0d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidaLaser: 15
+  danoParaDar: 1
+--- !u!114 &5353768555937196690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6538335017342870576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e670f0f34fbc90445ac4796639e77b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tempodeVida: 2.5

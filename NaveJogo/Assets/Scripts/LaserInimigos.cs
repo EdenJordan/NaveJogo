@@ -1,39 +1,37 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class LaserPlayer : MonoBehaviour
+public class LaserInimigos : MonoBehaviour
 {
 
-    public float velocidadeLaser;
-
+    public float velocidaLaser;
     public int danoParaDar;
+    
     // Start is called before the first frame update
     void Start()
     {
-        transform.Rotate(0, 0, -90);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         MovimentarLaser();
-        
     }
 
     private void MovimentarLaser()
     {
-        transform.Translate(Vector3.up * velocidadeLaser * Time.deltaTime);
+        transform.Translate(Vector3.up * velocidaLaser * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.GetComponent<Inimigos>().MachucarInimigo(danoParaDar);
+            other.gameObject.GetComponent<PlayerVida>().MachucarPlayer(danoParaDar);
             Destroy(this.gameObject);
         }
-        
     }
 }
