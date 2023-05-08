@@ -15,6 +15,8 @@ public class Inimigos : MonoBehaviour
 
     public int inimigoVidaAtual;
 
+    public int pontosparadar;
+
     public float tempoMaximoEntreOsLasers;
 
     public float tempoAtualDosLasers;
@@ -41,6 +43,8 @@ public class Inimigos : MonoBehaviour
     private void movimentarInimigo()
     {
         transform.Translate(Vector3.left * velocidadeInimigo * Time.deltaTime);
+        
+        // Time.deltatime serve para tornar a perfomance do jogo independente da taxa de atualização.
     }
 
     private void AtirarLaser()
@@ -61,8 +65,16 @@ public class Inimigos : MonoBehaviour
 
         if (inimigoVidaAtual <= 0)
         {
+            // caso a vida do inimigo seja menor ou igual a 0, o mesmo está morto e será destruiído.
+            
             Destroy(this.gameObject);
+            
+            // Quando o inimigo é destruido, o metodo aumentar pontuação irá aumentar os pontos obtidos pelo jogador.
+            
+            GameManager.instance.AumentarPontuacao(pontosparadar);
         }
+            
+            
     }
 }
 
