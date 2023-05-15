@@ -1581,10 +1581,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: InimigoVerde
       objectReference: {fileID: 0}
-    - target: {fileID: 1997918628053054331, guid: 8b2ffea14a7fde8499de19a563ac7502, type: 3}
-      propertyPath: velocidadeInimigo
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b2ffea14a7fde8499de19a563ac7502, type: 3}
 --- !u!1001 &4696778431180536216
@@ -1637,10 +1633,6 @@ PrefabInstance:
     - target: {fileID: 4696778430377061184, guid: 4f1de790f5b097c4facbacbe39686a67, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696778430377061187, guid: 4f1de790f5b097c4facbacbe39686a67, type: 3}
-      propertyPath: velocidadeInimigo
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4696778430377061198, guid: 4f1de790f5b097c4facbacbe39686a67, type: 3}
       propertyPath: m_Name

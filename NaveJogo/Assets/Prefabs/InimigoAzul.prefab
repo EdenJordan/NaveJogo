@@ -139,11 +139,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laserInimigo: {fileID: 6538335017342870576, guid: 438d895306c3df6499891a598b2575d8, type: 3}
   disparoAreaInimigo: {fileID: 4696778431560550591}
-  velocidadeInimigo: 0
+  velocidadeInimigo: 10
   inimigoVidaMaxima: 5
   inimigoVidaAtual: 0
   pontosparadar: 10
-  tempoMaximoEntreOsLasers: 1
+  tempoMaximoEntreOsLasers: 0.5
   tempoAtualDosLasers: 0
   inimigoAtirador: 1
 --- !u!1 &4696778431560550590
