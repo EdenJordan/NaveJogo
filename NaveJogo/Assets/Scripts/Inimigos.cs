@@ -1,9 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Inimigos : MonoBehaviour
 {
+    public bool NaveDeAtaque;
+
+    public bool CruzadordeBatalha;
 
     public GameObject laserInimigo;
 
@@ -53,9 +58,21 @@ public class Inimigos : MonoBehaviour
 
         if (tempoAtualDosLasers <= 0)
         {
-            Instantiate(laserInimigo, disparoAreaInimigo.position, Quaternion.Euler(0f, 0f, 90f));
-            tempoAtualDosLasers = tempoMaximoEntreOsLasers;
+            if (NaveDeAtaque == true)
+            {
+                float angulo = Random.Range(-30f, 30f);
+                Quaternion rotacao = Quaternion.Euler(0f, 0f, 90f + angulo);
+                Instantiate(laserInimigo, disparoAreaInimigo.position, rotacao);
+                tempoAtualDosLasers = tempoMaximoEntreOsLasers;
+            }
 
+            if (CruzadordeBatalha == true)
+            {
+                float angulo = Random.Range(-60f, 60f);
+                Quaternion rotacao = Quaternion.Euler(0f, 0f, 90f + angulo);
+                Instantiate(laserInimigo, disparoAreaInimigo.position, rotacao);
+                tempoAtualDosLasers = tempoMaximoEntreOsLasers;
+            }
         }
     }
 
