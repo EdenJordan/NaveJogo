@@ -136,12 +136,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23649d1e0de5c8b4d80e0cffdec8aac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NaveDeAtaque: 0
+  CruzadordeBatalha: 0
   laserInimigo: {fileID: 0}
   disparoAreaInimigo: {fileID: 0}
-  velocidadeInimigo: 0
+  velocidadeInimigo: 13
   inimigoVidaMaxima: 1
   inimigoVidaAtual: 0
   pontosparadar: 5
   tempoMaximoEntreOsLasers: 0
   tempoAtualDosLasers: 0
   inimigoAtirador: 0
+  escudoMaximo: 3
+  escudoAtual: 0
+  temEscudo: 0
+  escudo: {fileID: 0}

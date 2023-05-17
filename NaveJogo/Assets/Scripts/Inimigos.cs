@@ -27,12 +27,22 @@ public class Inimigos : MonoBehaviour
     public float tempoAtualDosLasers;
 
     public bool inimigoAtirador;
-
+    
+    //programação do escudo:
+    
+    public int escudoMaximo = 3;
+    
+    public int escudoAtual;
+    
+    public bool temEscudo;
+    
+    public GameObject escudo;
 
 // Start is called before the first frame update
     void Start()
     {
         inimigoVidaAtual = inimigoVidaMaxima;
+        escudoAtual = escudoMaximo;
     }
 
     // Update is called once per frame
@@ -78,6 +88,18 @@ public class Inimigos : MonoBehaviour
 
     public void MachucarInimigo(int danoRecebido)
     {
+        
+        if (temEscudo)
+        {
+            escudoAtual--;
+            if (escudoAtual <= 0)
+            {
+                DesativarEscudo();
+            }
+            
+            return;
+        }
+        
         inimigoVidaAtual -= danoRecebido;
 
         if (inimigoVidaAtual <= 0)
@@ -93,6 +115,15 @@ public class Inimigos : MonoBehaviour
             
             
     }
+
+    public void DesativarEscudo()
+    {
+        escudo.SetActive(false);
+        GetComponent<CapsuleCollider2D>().enabled = false;
+        temEscudo = false;
+    }
+    
+        
 }
 
 

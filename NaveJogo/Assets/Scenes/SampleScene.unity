@@ -1581,10 +1581,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: InimigoVerde
       objectReference: {fileID: 0}
-    - target: {fileID: 1997918628053054331, guid: 8b2ffea14a7fde8499de19a563ac7502, type: 3}
-      propertyPath: CruzadordeBatalha
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b2ffea14a7fde8499de19a563ac7502, type: 3}
 --- !u!1001 &4696778431180536216
@@ -1639,8 +1635,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4696778430377061187, guid: 4f1de790f5b097c4facbacbe39686a67, type: 3}
-      propertyPath: NaveDeAtaque
-      value: 1
+      propertyPath: inimigoVidaMaxima
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4696778430377061198, guid: 4f1de790f5b097c4facbacbe39686a67, type: 3}
       propertyPath: m_Name
@@ -1769,10 +1765,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8308321057251942821, guid: 3fb5c950411c2554fab25fd9ca193da3, type: 3}
-      propertyPath: velocidadeInimigo
-      value: 13
-      objectReference: {fileID: 0}
     - target: {fileID: 8308321057251942822, guid: 3fb5c950411c2554fab25fd9ca193da3, type: 3}
       propertyPath: m_RootOrder
       value: 4
