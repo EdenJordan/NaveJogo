@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6538335017342870579}
   - component: {fileID: 1865149527}
   - component: {fileID: 5353768555937196690}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: LaserInimigoAzul
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1728159373840224174}
   - component: {fileID: 1717785132}
   - component: {fileID: 6918590188553443897}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: LaserInimigoVerde
   m_TagString: Untagged
   m_Icon: {fileID: 0}

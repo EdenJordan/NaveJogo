@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2070705190}
   - component: {fileID: 2070705191}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Escudo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1997918627507520483}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: DisparoAreaInimigoVerde
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 1997918628053054330}
   - component: {fileID: 1997918628053054331}
   - component: {fileID: 3246434663009859809}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: InimigoVerde
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ MonoBehaviour:
   CruzadordeBatalha: 1
   laserInimigo: {fileID: 1728159373840224163, guid: 207346c9f90907f4eb0468dec084e95c, type: 3}
   disparoAreaInimigo: {fileID: 1997918627507520483}
-  velocidadeInimigo: 0
+  velocidadeInimigo: 5
   inimigoVidaMaxima: 3
   inimigoVidaAtual: 0
   pontosparadar: 15
