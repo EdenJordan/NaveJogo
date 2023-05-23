@@ -138,9 +138,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NaveDeAtaque: 0
   CruzadordeBatalha: 0
+  movimentoNaveDeAtaque: 0
+  velocidadeVertical: 0
+  MudarDirecao: 0
+  AtualDirecao: 0
   laserInimigo: {fileID: 0}
   disparoAreaInimigo: {fileID: 0}
-  velocidadeInimigo: 13
+  velocidadeInimigo: 10
   inimigoVidaMaxima: 1
   inimigoVidaAtual: 0
   pontosparadar: 5

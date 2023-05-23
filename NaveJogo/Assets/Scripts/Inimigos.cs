@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -9,6 +10,18 @@ public class Inimigos : MonoBehaviour
     public bool NaveDeAtaque;
 
     public bool CruzadordeBatalha;
+    
+    //movimentação nave de ataque
+
+    public float movimentoNaveDeAtaque;
+
+    public float velocidadeVertical;
+
+    public float MudarDirecao;
+
+    public float AtualDirecao;
+
+    //
 
     public GameObject laserInimigo;
 
@@ -56,10 +69,27 @@ public class Inimigos : MonoBehaviour
     }
 
     private void movimentarInimigo()
-    {
-        transform.Translate(Vector3.left * velocidadeInimigo * Time.deltaTime);
+    { 
+        AtualDirecao += Time.deltaTime;
+
+        if (NaveDeAtaque)
+        {
+            if (AtualDirecao >= MudarDirecao)
+            {
+                movimentoNaveDeAtaque = Random.Range(-velocidadeVertical, velocidadeVertical);
+                AtualDirecao = Random.value * MudarDirecao;
+            }
+
+            // Time.deltatime serve para tornar a perfomance do jogo independente da taxa de atualização.
         
-        // Time.deltatime serve para tornar a perfomance do jogo independente da taxa de atualização.
+        transform.Translate((Vector3.left + Vector3.up*movimentoNaveDeAtaque) * velocidadeInimigo * Time.deltaTime);
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -7, 7),
+            transform.position.z);
+        }
+        else
+        {
+            transform.Translate(Vector3.left * velocidadeInimigo * Time.deltaTime);
+        }
     }
 
     private void AtirarLaser()

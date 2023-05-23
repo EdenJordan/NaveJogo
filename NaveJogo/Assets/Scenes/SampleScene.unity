@@ -1552,10 +1552,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserInimigoVerde
       objectReference: {fileID: 0}
-    - target: {fileID: 1728159373840224163, guid: 207346c9f90907f4eb0468dec084e95c, type: 3}
-      propertyPath: m_Layer
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 207346c9f90907f4eb0468dec084e95c, type: 3}
 --- !u!1001 &1997918627526876290
@@ -1565,14 +1561,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2070705189, guid: 8b2ffea14a7fde8499de19a563ac7502, type: 3}
-      propertyPath: m_Layer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1997918627507520482, guid: 8b2ffea14a7fde8499de19a563ac7502, type: 3}
-      propertyPath: m_Layer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1997918628053054324, guid: 8b2ffea14a7fde8499de19a563ac7502, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1621,10 +1609,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: InimigoVerde
       objectReference: {fileID: 0}
-    - target: {fileID: 1997918628053054326, guid: 8b2ffea14a7fde8499de19a563ac7502, type: 3}
-      propertyPath: m_Layer
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b2ffea14a7fde8499de19a563ac7502, type: 3}
 --- !u!1001 &4696778431180536216
@@ -1634,10 +1618,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 882994959, guid: 4f1de790f5b097c4facbacbe39686a67, type: 3}
-      propertyPath: m_Layer
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4696778430377061184, guid: 4f1de790f5b097c4facbacbe39686a67, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1686,14 +1666,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: InimigoAzul
       objectReference: {fileID: 0}
-    - target: {fileID: 4696778430377061198, guid: 4f1de790f5b097c4facbacbe39686a67, type: 3}
-      propertyPath: m_Layer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696778431560550590, guid: 4f1de790f5b097c4facbacbe39686a67, type: 3}
-      propertyPath: m_Layer
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f1de790f5b097c4facbacbe39686a67, type: 3}
 --- !u!1001 &5556665731976760528
@@ -1706,10 +1678,6 @@ PrefabInstance:
     - target: {fileID: 5556665730556154580, guid: 5df689a8831cf5f46a9696be07529263, type: 3}
       propertyPath: m_Name
       value: LaserPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 5556665730556154580, guid: 5df689a8831cf5f46a9696be07529263, type: 3}
-      propertyPath: m_Layer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5556665730556154582, guid: 5df689a8831cf5f46a9696be07529263, type: 3}
       propertyPath: m_RootOrder
@@ -1767,10 +1735,6 @@ PrefabInstance:
     - target: {fileID: 6538335017342870576, guid: 438d895306c3df6499891a598b2575d8, type: 3}
       propertyPath: m_Name
       value: LaserInimigoAzul
-      objectReference: {fileID: 0}
-    - target: {fileID: 6538335017342870576, guid: 438d895306c3df6499891a598b2575d8, type: 3}
-      propertyPath: m_Layer
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6538335017342870578, guid: 438d895306c3df6499891a598b2575d8, type: 3}
       propertyPath: m_RootOrder
@@ -1872,10 +1836,6 @@ PrefabInstance:
     - target: {fileID: 8308321057251942824, guid: 3fb5c950411c2554fab25fd9ca193da3, type: 3}
       propertyPath: m_Name
       value: InimigoVerde2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8308321057251942824, guid: 3fb5c950411c2554fab25fd9ca193da3, type: 3}
-      propertyPath: m_Layer
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fb5c950411c2554fab25fd9ca193da3, type: 3}
