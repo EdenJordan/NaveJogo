@@ -226,12 +226,12 @@ MonoBehaviour:
   NaveDeAtaque: 1
   CruzadordeBatalha: 0
   movimentoNaveDeAtaque: 0.2
-  velocidadeVertical: 1
-  MudarDirecao: 1
-  AtualDirecao: 1
+  velocidadeVertical: 0.5
+  MudarDirecao: 6
+  AtualDirecao: 3
   laserInimigo: {fileID: 6538335017342870576, guid: 438d895306c3df6499891a598b2575d8, type: 3}
   disparoAreaInimigo: {fileID: 4696778431560550591}
-  velocidadeInimigo: 8
+  velocidadeInimigo: 6
   inimigoVidaMaxima: 3
   inimigoVidaAtual: 0
   pontosparadar: 10
@@ -252,7 +252,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

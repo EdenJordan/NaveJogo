@@ -15,22 +15,34 @@ public class GeradorObjetos : MonoBehaviour
 
     public float tempoAtualDosSpawns;
     
-    
+    public float tempoEspera = 20f; // Tempo de espera em segundos
+
+    private bool canStart = false;
     
     // Start is called before the first frame update
     void Start()
     {
+        Invoke("Fase2", tempoEspera);
         tempoAtualDosSpawns = tempoMaximoEntreOsSpawns;
     }
 
     // Update is called once per frame
     void Update()
     {
-        tempoAtualDosSpawns -= Time.deltaTime;
-        if (tempoAtualDosSpawns <= 0)
+        if (canStart)
         {
-            SpawnarObjeto();
+            tempoAtualDosSpawns -= Time.deltaTime;
+            if (tempoAtualDosSpawns <= 0)
+            {
+                SpawnarObjeto();
+            }
         }
+        
+    }
+    
+    private void Fase2()
+    {
+        canStart = true;
     }
 
     private void SpawnarObjeto()
@@ -43,4 +55,5 @@ public class GeradorObjetos : MonoBehaviour
 
         tempoAtualDosSpawns = tempoMaximoEntreOsSpawns;
     }
+    
 }

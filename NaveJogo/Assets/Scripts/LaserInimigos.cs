@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class LaserInimigos : MonoBehaviour
 {
+    public bool asteroide;
 
     public float velocidaLaser;
     public int danoParaDar;
@@ -23,7 +24,15 @@ public class LaserInimigos : MonoBehaviour
 
     private void MovimentarLaser()
     {
-        transform.Translate(Vector3.up * velocidaLaser * Time.deltaTime);
+        if (asteroide)
+        {
+            transform.Translate(Vector3.left * velocidaLaser * Time.deltaTime);
+        }
+        else
+        {
+            transform.Translate(Vector3.up * velocidaLaser * Time.deltaTime);
+        }
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)

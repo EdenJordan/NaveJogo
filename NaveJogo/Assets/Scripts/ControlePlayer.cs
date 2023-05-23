@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class ControlePlayer : MonoBehaviour
 {
-
+    public float paredeDireita;
+    
+    public float paredeEsquerda;
+    
+    public float paredeCima;
+    
+    public float paredeBaixo;
+    
     public Rigidbody2D ORigidbody2D;
 
     public GameObject laserPlayer;
@@ -28,6 +35,7 @@ public class ControlePlayer : MonoBehaviour
     {
         movimentarPlayer();
         AtirarLaser();
+        
     }
 
     private void movimentarPlayer()
@@ -47,4 +55,5 @@ public class ControlePlayer : MonoBehaviour
             
         }
     }
+
 }

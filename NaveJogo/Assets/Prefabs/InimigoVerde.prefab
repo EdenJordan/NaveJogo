@@ -256,6 +256,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NaveDeAtaque: 0
   CruzadordeBatalha: 1
+  movimentoNaveDeAtaque: 0
+  velocidadeVertical: 0
+  MudarDirecao: 0
+  AtualDirecao: 0
   laserInimigo: {fileID: 1728159373840224163, guid: 207346c9f90907f4eb0468dec084e95c, type: 3}
   disparoAreaInimigo: {fileID: 1997918627507520483}
   velocidadeInimigo: 5

@@ -7,11 +7,12 @@ using Random = UnityEngine.Random;
 
 public class Inimigos : MonoBehaviour
 {
+
     public bool NaveDeAtaque;
 
     public bool CruzadordeBatalha;
     
-    //movimentação nave de ataque
+    //variáveis movimentação errática nave de ataque
 
     public float movimentoNaveDeAtaque;
 
@@ -41,7 +42,7 @@ public class Inimigos : MonoBehaviour
 
     public bool inimigoAtirador;
     
-    //programação do escudo:
+    //variáveis programação do escudo:
     
     public int escudoMaximo = 3;
     
@@ -67,6 +68,7 @@ public class Inimigos : MonoBehaviour
             AtirarLaser();
         }
     }
+    
 
     private void movimentarInimigo()
     { 
@@ -152,6 +154,7 @@ public class Inimigos : MonoBehaviour
         GetComponent<CapsuleCollider2D>().enabled = false;
         temEscudo = false;
     }
+    
     
         
 }
