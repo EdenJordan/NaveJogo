@@ -15,7 +15,7 @@ public class GeradorObjetos : MonoBehaviour
 
     public float tempoAtualDosSpawns;
     
-    public float tempoEspera = 20f; // Tempo de espera em segundos
+    public float tempoEspera = 15f; // Tempo de espera em segundos
 
     private bool canStart = false;
     

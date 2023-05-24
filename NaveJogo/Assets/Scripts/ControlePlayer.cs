@@ -1,17 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class ControlePlayer : MonoBehaviour
 {
-    public float paredeDireita;
     
-    public float paredeEsquerda;
-    
-    public float paredeCima;
-    
-    public float paredeBaixo;
-    
+    public float Direita, Esquerda, Cima, Baixo;
+
     public Rigidbody2D ORigidbody2D;
 
     public GameObject laserPlayer;
@@ -33,9 +29,10 @@ public class ControlePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        JogadorPreso();
         movimentarPlayer();
         AtirarLaser();
-        
+
     }
 
     private void movimentarPlayer()
@@ -54,6 +51,12 @@ public class ControlePlayer : MonoBehaviour
             }
             
         }
+    }
+
+    private void JogadorPreso()
+    {
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, Esquerda, Direita),
+            Mathf.Clamp(transform.position.y, Baixo, Cima), transform.position.z);
     }
 
 }

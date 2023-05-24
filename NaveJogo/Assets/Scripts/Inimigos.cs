@@ -26,6 +26,8 @@ public class Inimigos : MonoBehaviour
 
     public GameObject laserInimigo;
 
+    public int danoParaDar;
+
     public Transform disparoAreaInimigo;
     
     public float velocidadeInimigo;
@@ -85,7 +87,7 @@ public class Inimigos : MonoBehaviour
             // Time.deltatime serve para tornar a perfomance do jogo independente da taxa de atualização.
         
         transform.Translate((Vector3.left + Vector3.up*movimentoNaveDeAtaque) * velocidadeInimigo * Time.deltaTime);
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -7, 7),
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -4, 4),
             transform.position.z);
         }
         else
@@ -117,6 +119,17 @@ public class Inimigos : MonoBehaviour
             }
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerVida>().MachucarPlayer(danoParaDar);
+            Destroy(this.gameObject);
+        }
+    }
+    
+ 
 
     public void MachucarInimigo(int danoRecebido)
     {
@@ -154,6 +167,7 @@ public class Inimigos : MonoBehaviour
         GetComponent<CapsuleCollider2D>().enabled = false;
         temEscudo = false;
     }
+    
     
     
         
