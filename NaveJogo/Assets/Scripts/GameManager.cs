@@ -15,13 +15,19 @@ public class GameManager : MonoBehaviour
 
 
     public TextMeshProUGUI textoPontuacaoAtual;
+
+    public GameObject painelGameOver;
+
+    public TextMeshProUGUI textoPontuacaoFinal;
+
+    public TextMeshProUGUI textoHighScore;
         
     public int pontuacaoAtual;
         
     // Start is called before the first frame update.
     private void Awake()
     {
-        // Awake ao mesmo tempo que o jogo é iniciado, consequentemente antes do Start.
+        // Awake ao mesmo tempo que o jogo é iniciado, antes do Start/primeiro frame.
 
         instance = this;
         
@@ -31,6 +37,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1f;
         pontuacaoAtual = 0;
         textoPontuacaoAtual.text = "PONTUAÇÃO: " + pontuacaoAtual;
     }
@@ -48,5 +55,13 @@ public class GameManager : MonoBehaviour
         
         pontuacaoAtual += pontosRecebidos;
         textoPontuacaoAtual.text = "PONTUAÇÃO: " + pontuacaoAtual;
+    }
+
+    public void GameOver()
+    {
+        //Set Active = ativa/desativa objeto no inspector da unity
+        Time.timeScale = 0f;
+        painelGameOver.SetActive(true);
+        textoPontuacaoFinal.text = "PONTUAÇÃO: " + pontuacaoAtual;
     }
 }

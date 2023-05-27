@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
 
@@ -11,14 +12,14 @@ public class PlayerVida : MonoBehaviour
     // 
 
     public int playerVidaMaxima;
-    
-    // Vida maxima do jogador 
 
     public int playerVidaAtual;
-    
-    // Vida atual do jogador
 
     public bool temEscudo;
+
+    public int numVidaAtual;
+
+    public TextMeshProUGUI numVidas;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,10 @@ public class PlayerVida : MonoBehaviour
         barradevidaPlayer.maxValue = playerVidaMaxima;
 
         barradevidaPlayer.value = playerVidaAtual;
+
+        numVidaAtual = 5;
+
+        numVidas.text = "Vidas restantes:" + numVidaAtual;
 
     }
 
@@ -46,6 +51,7 @@ public class PlayerVida : MonoBehaviour
 
             if (playerVidaAtual <= 0)
             {
+                GameManager.instance.GameOver();
                 Debug.Log("Game Over");
             }
         }
