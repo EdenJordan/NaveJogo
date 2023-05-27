@@ -8,7 +8,7 @@ using UnityEngine;
 public class PlayerVida : MonoBehaviour
 {
     public Slider barradevidaPlayer;
-    
+
     // 
 
     public int playerVidaMaxima;
@@ -19,7 +19,8 @@ public class PlayerVida : MonoBehaviour
 
     public int numVidaAtual;
 
-    public TextMeshProUGUI numVidas;
+    public TextMeshProUGUI numVidasTexto;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,14 +32,14 @@ public class PlayerVida : MonoBehaviour
 
         numVidaAtual = 5;
 
-        numVidas.text = "Vidas restantes:" + numVidaAtual;
+        numVidasTexto.text = "Vidas restantes:" + numVidaAtual;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void MachucarPlayer(int danorecebido)
@@ -51,11 +52,31 @@ public class PlayerVida : MonoBehaviour
 
             if (playerVidaAtual <= 0)
             {
-                GameManager.instance.GameOver();
-                Debug.Log("Game Over");
+                if (playerVidaAtual <= 0)
+                {
+                    numVidaAtual--;
+                    if (numVidaAtual <= 0)
+                    {
+                        GameManager.instance.GameOver();
+                        Debug.Log("Game Over");
+                    }
+                    else
+                    {
+                        // O jogador ainda tem vidas restantes
+                        playerVidaAtual = playerVidaMaxima;
+                        barradevidaPlayer.value = playerVidaAtual;
+                        UpdateNumVidasTexto();
+                        Debug.Log("Perdeu uma vida. Vidas restantes: " + numVidaAtual);
+                    }
+                }
+
             }
+
         }
-        
     }
-    
+
+    void UpdateNumVidasTexto()
+    {
+        numVidasTexto.text = "Vidas restantes: " + numVidaAtual;
+    }
 }

@@ -261,6 +261,7 @@ MonoBehaviour:
   MudarDirecao: 0
   AtualDirecao: 0
   laserInimigo: {fileID: 1728159373840224163, guid: 207346c9f90907f4eb0468dec084e95c, type: 3}
+  danoParaDar: 5
   disparoAreaInimigo: {fileID: 1997918627507520483}
   velocidadeInimigo: 5
   inimigoVidaMaxima: 3
