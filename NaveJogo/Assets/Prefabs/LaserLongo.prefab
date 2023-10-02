@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5556665730556154580
+--- !u!1 &2787417711963109785
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5556665730556154582}
-  - component: {fileID: 5556665730556154581}
-  - component: {fileID: 5556665730556154583}
-  - component: {fileID: -930023402872869322}
-  - component: {fileID: 1739544184167217777}
+  - component: {fileID: 2787417711963109787}
+  - component: {fileID: 2787417711963109784}
+  - component: {fileID: 2787417711963109786}
+  - component: {fileID: 1775613469058778491}
+  - component: {fileID: 8329338888236667196}
   m_Layer: 1
-  m_Name: LaserPlayer
+  m_Name: LaserLongo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5556665730556154582
+--- !u!4 &2787417711963109787
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5556665730556154580}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -4.141758, y: -0.9749682, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 2787417711963109785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.61, y: 12.619, z: 0}
+  m_LocalScale: {x: 1, y: 3.0522, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
---- !u!212 &5556665730556154581
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &2787417711963109784
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5556665730556154580}
+  m_GameObject: {fileID: 2787417711963109785}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1567652828, guid: 0fc57b5a89aaa2e469e1b3a00da31bdb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 359280297, guid: 0fc57b5a89aaa2e469e1b3a00da31bdb, type: 3}
+  m_Color: {r: 0.9623968, g: 0.22075468, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -87,13 +87,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &5556665730556154583
+--- !u!70 &2787417711963109786
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5556665730556154580}
+  m_GameObject: {fileID: 2787417711963109785}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -103,27 +103,28 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.56930375, y: 0.9622036}
   m_Direction: 0
---- !u!114 &-930023402872869322
+--- !u!114 &1775613469058778491
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5556665730556154580}
+  m_GameObject: {fileID: 2787417711963109785}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5131ddab6dde1b143b096d2bc5686706, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laserlongoouSupertiro: 1
   velocidadeLaser: 10
-  danoParaDar: 1
---- !u!114 &1739544184167217777
+  danoParaDar: 0.03
+--- !u!114 &8329338888236667196
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5556665730556154580}
+  m_GameObject: {fileID: 2787417711963109785}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e670f0f34fbc90445ac4796639e77b09, type: 3}

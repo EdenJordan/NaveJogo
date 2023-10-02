@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class LaserPlayer : MonoBehaviour
 {
-
+    public bool laserlongoouSupertiro;
+        
     public float velocidadeLaser;
 
-    public int danoParaDar;
+    public float danoParaDar;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,9 +33,32 @@ public class LaserPlayer : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-            other.gameObject.GetComponent<Inimigos>().MachucarInimigo(danoParaDar);
-            Destroy(this.gameObject);
+            if (laserlongoouSupertiro)
+            {
+                other.gameObject.GetComponent<Inimigos>().MachucarInimigo(danoParaDar);
+            }
+            else
+            {
+                other.gameObject.GetComponent<Inimigos>().MachucarInimigo(danoParaDar);
+                Destroy(this.gameObject);
+            }
+        }
+        if (other.gameObject.CompareTag("Boss"))
+        {
+            if (laserlongoouSupertiro)
+            {
+                other.gameObject.GetComponent<NaveMae>().MachucarInimigo(danoParaDar);
+            }
+            else
+            {
+                other.gameObject.GetComponent<NaveMae>().MachucarInimigo(danoParaDar);
+                Destroy(this.gameObject);
+            }
         }
         
+
     }
+    
+    
+    
 }

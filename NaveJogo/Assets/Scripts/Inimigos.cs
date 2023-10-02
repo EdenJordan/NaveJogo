@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class Inimigos : MonoBehaviour
 {
+    // booleanas das naves
 
     public bool NaveDeAtaque;
 
@@ -23,6 +25,9 @@ public class Inimigos : MonoBehaviour
     public float AtualDirecao;
 
     //
+    public GameObject itemDropar;
+    
+    public GameObject itemDroparRaro;
 
     public GameObject laserInimigo;
 
@@ -32,11 +37,15 @@ public class Inimigos : MonoBehaviour
     
     public float velocidadeInimigo;
 
-    public int inimigoVidaMaxima;
+    public float inimigoVidaMaxima;
 
-    public int inimigoVidaAtual;
+    public float inimigoVidaAtual;
 
     public int pontosparadar;
+
+    public int chancedeDrop;
+    
+    public int chancedeDropRaro;
 
     public float tempoMaximoEntreOsLasers;
 
@@ -64,6 +73,7 @@ public class Inimigos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+    
         movimentarInimigo();
         if (inimigoAtirador == true)
         { 
@@ -131,9 +141,8 @@ public class Inimigos : MonoBehaviour
     
  
 
-    public void MachucarInimigo(int danoRecebido)
+    public void MachucarInimigo(float danoRecebido)
     {
-        
         if (temEscudo)
         {
             escudoAtual--;
@@ -141,7 +150,6 @@ public class Inimigos : MonoBehaviour
             {
                 DesativarEscudo();
             }
-            
             return;
         }
         
@@ -149,16 +157,22 @@ public class Inimigos : MonoBehaviour
 
         if (inimigoVidaAtual <= 0)
         {
-            // caso a vida do inimigo seja menor ou igual a 0, o mesmo está morto e será destruiído.
-            
-            Destroy(this.gameObject);
-            
-            // Quando o inimigo é destruido, o metodo aumentar pontuação irá aumentar os pontos obtidos pelo jogador.
-            
             GameManager.instance.AumentarPontuacao(pontosparadar);
+            int numeroAleatorio = Random.Range(0, 100);
+            int numeroAleatorio2 = Random.Range(0, 100);
+            if (numeroAleatorio <= chancedeDrop)
+            {
+                Instantiate(itemDropar, transform.position + new Vector3(1,0,0), quaternion.Euler(0f, 0f, 0f));
+
+            }
+            if (numeroAleatorio2 <= chancedeDropRaro)
+            {
+                Instantiate(itemDroparRaro, transform.position, quaternion.Euler(0f, 0f, 0f));
+
+            }
+            Destroy(this.gameObject);
         }
-            
-            
+
     }
 
     public void DesativarEscudo()
@@ -172,6 +186,7 @@ public class Inimigos : MonoBehaviour
     
         
 }
+
 
 
 

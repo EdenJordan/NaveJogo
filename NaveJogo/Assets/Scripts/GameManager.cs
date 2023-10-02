@@ -2,13 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEditor;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    
-    
+
     public static GameManager instance;
         
         // public static serve para indicar para a unity que essa variável é única e referencia o próprio script. 
@@ -17,11 +18,11 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI textoPontuacaoAtual;
 
     public GameObject painelGameOver;
+    public GameObject painelVitoria;
 
-    public TextMeshProUGUI textoPontuacaoFinal;
+    public TextMeshProUGUI textoPontuacaoFinalGO;
+    public TextMeshProUGUI textoPontuacaoFinalVi;
 
-    public TextMeshProUGUI textoHighScore;
-        
     public int pontuacaoAtual;
         
     // Start is called before the first frame update.
@@ -29,30 +30,45 @@ public class GameManager : MonoBehaviour
     {
         // Awake ao mesmo tempo que o jogo é iniciado, antes do Start/primeiro frame.
 
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+        
+        
         
         // variável instance terá como valor o script Gamemanager.
 
     }
 
     void Start()
+    
     {
+        SceneManager.LoadScene("menu");
         Time.timeScale = 1f;
         pontuacaoAtual = 0;
         textoPontuacaoAtual.text = "PONTUAÇÃO: " + pontuacaoAtual;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if(pontuacaoAtual >= 200)
-        {
-            Time.timeScale = 0f;
-        }
+        
         
     }
-    
+
+
+    public void botoes()
+    {
+        SceneManager.LoadScene("GUI");
+        SceneManager.LoadScene("Level", LoadSceneMode.Additive);
+    }
 
     public void AumentarPontuacao(int pontosRecebidos)
     {
@@ -67,6 +83,14 @@ public class GameManager : MonoBehaviour
         //Set Active = ativa/desativa objeto no inspector da unity
         Time.timeScale = 0f;
         painelGameOver.SetActive(true);
-        textoPontuacaoFinal.text = "PONTUAÇÃO: " + pontuacaoAtual;
+        textoPontuacaoFinalGO.text = "PONTUAÇÃO: " + pontuacaoAtual;
+        
+    }
+
+    public void Vitoria()
+    {
+        Time.timeScale = 0f;
+        painelVitoria.SetActive(true);
+        textoPontuacaoFinalVi.text = "PONTUAÇÃO: " + pontuacaoAtual;
     }
 }

@@ -260,13 +260,17 @@ MonoBehaviour:
   velocidadeVertical: 0
   MudarDirecao: 0
   AtualDirecao: 0
+  itemDropar: {fileID: 1475875177197172091, guid: b6ba274e742e3ea49a9370029e4649ff, type: 3}
+  itemDroparRaro: {fileID: 4715826227133781306, guid: 755950901c76a15429d3173810afd391, type: 3}
   laserInimigo: {fileID: 1728159373840224163, guid: 207346c9f90907f4eb0468dec084e95c, type: 3}
   danoParaDar: 5
   disparoAreaInimigo: {fileID: 1997918627507520483}
   velocidadeInimigo: 5
-  inimigoVidaMaxima: 3
+  inimigoVidaMaxima: 5
   inimigoVidaAtual: 0
   pontosparadar: 15
+  chancedeDrop: 15
+  chancedeDropRaro: 5
   tempoMaximoEntreOsLasers: 1.5
   tempoAtualDosLasers: 0
   inimigoAtirador: 1

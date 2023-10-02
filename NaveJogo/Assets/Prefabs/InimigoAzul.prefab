@@ -227,15 +227,19 @@ MonoBehaviour:
   CruzadordeBatalha: 0
   movimentoNaveDeAtaque: 0.2
   velocidadeVertical: 0.5
-  MudarDirecao: 6
+  MudarDirecao: 3
   AtualDirecao: 3
+  itemDropar: {fileID: 8349505415424289127, guid: 629a8093344c18e4f99d3676e2152860, type: 3}
+  itemDroparRaro: {fileID: 6588464804385992312, guid: 158fa35e4cda8da4094307e4e17432e2, type: 3}
   laserInimigo: {fileID: 6538335017342870576, guid: 438d895306c3df6499891a598b2575d8, type: 3}
-  danoParaDar: 5
+  danoParaDar: 3
   disparoAreaInimigo: {fileID: 4696778431560550591}
   velocidadeInimigo: 6
   inimigoVidaMaxima: 3
   inimigoVidaAtual: 0
   pontosparadar: 10
+  chancedeDrop: 15
+  chancedeDropRaro: 5
   tempoMaximoEntreOsLasers: 0.5
   tempoAtualDosLasers: 0
   inimigoAtirador: 1

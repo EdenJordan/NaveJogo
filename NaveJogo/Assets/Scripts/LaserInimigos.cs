@@ -5,7 +5,13 @@ using UnityEngine;
 
 public class LaserInimigos : MonoBehaviour
 {
+    public float velocidadeDoMissil;
+    
     public bool asteroide;
+
+    public bool missilnavemae;
+
+    private Transform target;
 
     public float velocidaLaser;
     public int danoParaDar;
@@ -43,4 +49,5 @@ public class LaserInimigos : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+   
 }
