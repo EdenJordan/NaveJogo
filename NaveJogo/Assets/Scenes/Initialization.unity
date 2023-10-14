@@ -153,6 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoPontuacaoAtual: {fileID: 0}
+  playerstart: {fileID: 0}
+  objetoplayer: {fileID: 1137572926265951659, guid: f34ea9ecabf0b8e4a842506dea120b9b, type: 3}
   painelGameOver: {fileID: 0}
   painelVitoria: {fileID: 0}
   textoPontuacaoFinalGO: {fileID: 0}

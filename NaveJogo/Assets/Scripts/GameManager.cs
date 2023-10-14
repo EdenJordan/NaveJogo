@@ -17,6 +17,9 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI textoPontuacaoAtual;
 
+    public GameObject playerstart;
+
+    public GameObject objetoplayer;
     public GameObject painelGameOver;
     public GameObject painelVitoria;
 
@@ -67,9 +70,13 @@ public class GameManager : MonoBehaviour
     public void botoes()
     {
         SceneManager.LoadScene("GUI");
-        SceneManager.LoadScene("Level", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("Level", LoadSceneMode.Additive).completed += delegate(AsyncOperation operation)
+        {
+            playerstart = GameObject.Find("playerstart");
+            Instantiate(objetoplayer, playerstart.transform.position, Quaternion.Euler(0, 0, 0));
+        };
     }
-
+    
     public void AumentarPontuacao(int pontosRecebidos)
     {
         // método precisa ser público para ser acessado por outros scripts.
